@@ -1,0 +1,186 @@
+# And
+snippet and
+	And(${1}, ${2})
+
+# BeADirectory
+snippet dir
+	BeADirectory()
+snippet bedir
+	BeADirectory()
+snippet beadir
+	BeADirectory()
+
+# BeARegularFile
+snippet rf
+	BeARegularFile()
+snippet regular
+	BeARegularFile()
+snippet regfile
+	BeARegularFile()
+snippet beareg
+	BeARegularFile()
+snippet bearegfile
+	BeARegularFile()
+
+# BeAnExistingFile
+snippet ef
+	BeAnExistingFile()
+snippet existing
+	BeAnExistingFile()
+snippet existfile
+	BeAnExistingFile()
+snippet beanexist
+	BeAnExistingFile()
+snippet beanexfile
+	BeAnExistingFile()
+
+# BeAssignableToTypeOf
+snippet assign
+	BeAssignableToTypeOf()
+snippet assignable
+	BeAssignableToTypeOf()
+snippet beassign
+	BeAssignableToTypeOf()
+snippet beassignable
+	BeAssignableToTypeOf()
+
+# BeClosed()
+snippet clo
+	BeClosed()
+snippet closed
+	BeClosed()
+snippet beclosed
+	BeClosed()
+
+# BeEmpty()
+snippet emp
+	BeEmpty()
+snippet empty
+	BeEmpty()
+snippet beempty
+	BeEmpty()
+
+# BeEquivalentTo()
+snippet equivalent
+	BeEquivalentTo(${1})
+snippet beq
+	BeEquivalentTo(${1})
+snippet beeq
+	BeEquivalentTo(${1})
+snippet beeqto
+	BeEquivalentTo(${1})
+
+# BeFalse()
+snippet false
+	BeFalse()
+snippet bf
+	BeFalse()
+snippet bef
+	BeFalse()
+
+# BeIdenticalTo()
+snippet identical
+	BeIdenticalTo(${1})
+snippet bi
+	BeIdenticalTo(${1})
+snippet bit
+	BeIdenticalTo(${1})
+snippet bid
+	BeIdenticalTo(${1})
+
+# BeNil()
+snippet nil
+	BeNil()
+snippet bn
+	BeNil()
+snippet bni
+	BeNil()
+
+# BeNumerically()
+snippet numerical
+	BeNumerically(${1}, ${2})
+snippet bnu
+	BeNumerically(${1}, ${2})
+snippet bnum
+	BeNumerically(${1}, ${2})
+
+	BeSent(arg interface{})
+
+	BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
+
+	BeTrue()
+
+	BeZero()
+
+	ConsistOf(elements ...interface{})
+
+	ContainElement(element interface{})
+
+	ContainSubstring(substr string, args ...interface{})
+
+	Equal(expected interface{})
+
+	HaveCap(count int)
+
+	HaveKey(key interface{})
+
+	HaveKeyWithValue(key interface{}, value interface{})
+
+	HaveLen(count int)
+
+	HaveOccurred()
+
+	HavePrefix(prefix string, args ...interface{})
+
+	HaveSuffix(suffix string, args ...interface{})
+
+	InterceptGomegaFailures(f func())
+
+	MatchError(expected interface{})
+
+	MatchJSON(json interface{})
+
+	MatchRegexp(regexp string, args ...interface{})
+
+	MatchYAML(yaml interface{})
+
+	Not(matcher types.GomegaMatcher)
+
+	Or(ms ...types.GomegaMatcher)
+
+	Panic()
+
+	Receive(args ...interface{})
+
+	RegisterFailHandler(handler types.GomegaFailHandler)
+
+	RegisterTestingT(t types.GomegaTestingT)
+
+	SatisfyAll(matchers ...types.GomegaMatcher)
+
+	SatisfyAny(matchers ...types.GomegaMatcher)
+
+	SetDefaultConsistentlyDuration(t time.Duration)
+
+	SetDefaultConsistentlyPollingInterval(t time.Duration)
+
+	SetDefaultEventuallyPollingInterval(t time.Duration)
+
+	SetDefaultEventuallyTimeout(t time.Duration)
+
+	Succeed()
+
+	WithTransform(transform interface{}, matcher types.GomegaMatcher)
+
+	Expect(actual interface{}, extra ...interface{})
+
+	ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
+
+	Consistently(actual interface{}, intervals ...interface{})
+
+	ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
+
+	Eventually(actual interface{}, intervals ...interface{})
+
+	EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
+
