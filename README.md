@@ -1,6 +1,6 @@
 # Vim Ginkgo Snippets
 
-Snippets for the [Ginkgo](https://github.com/onsi/ginkgo) matcher library [Gomega](https://github.com/onsi/gomega)
+Snippets for the [Ginkgo](https://github.com/onsi/ginkgo) matcher library [Gomega](https://github.com/onsi/gomega). These snippets pair well with [vim-ginkgo-snippets](https://github.com/trayo/vim-ginkgo-snippets).
 
 ## Installation
 
