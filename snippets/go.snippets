@@ -1,13 +1,13 @@
-# And
+# And(ms ...types.GomegaMatcher)
 snippet and
 	And(${1}, ${2})
 
 # BeADirectory
 snippet dir
 	BeADirectory()
-snippet bedir
+snippet bad
 	BeADirectory()
-snippet beadir
+snippet bedir
 	BeADirectory()
 
 # BeARegularFile
@@ -15,11 +15,9 @@ snippet rf
 	BeARegularFile()
 snippet regular
 	BeARegularFile()
-snippet regfile
+snippet brf
 	BeARegularFile()
-snippet beareg
-	BeARegularFile()
-snippet bearegfile
+snippet bereg
 	BeARegularFile()
 
 # BeAnExistingFile
@@ -27,21 +25,23 @@ snippet ef
 	BeAnExistingFile()
 snippet existing
 	BeAnExistingFile()
-snippet existfile
+snippet bef
 	BeAnExistingFile()
-snippet beanexist
+snippet bae
 	BeAnExistingFile()
-snippet beanexfile
+snippet beexist
 	BeAnExistingFile()
 
-# BeAssignableToTypeOf
-snippet assign
+# BeAssignableToTypeOf(expected interface{})
+snippet ass
 	BeAssignableToTypeOf()
 snippet assignable
 	BeAssignableToTypeOf()
-snippet beassign
+snippet bat
 	BeAssignableToTypeOf()
-snippet beassignable
+snippet bea
+	BeAssignableToTypeOf()
+snippet beass
 	BeAssignableToTypeOf()
 
 # BeClosed()
@@ -49,7 +49,7 @@ snippet clo
 	BeClosed()
 snippet closed
 	BeClosed()
-snippet beclosed
+snippet bec
 	BeClosed()
 
 # BeEmpty()
@@ -57,17 +57,17 @@ snippet emp
 	BeEmpty()
 snippet empty
 	BeEmpty()
-snippet beempty
+snippet bee
 	BeEmpty()
 
-# BeEquivalentTo()
+# BeEquivalentTo(expected interface{})
+snippet equiv
+	BeEquivalentTo(${1})
 snippet equivalent
 	BeEquivalentTo(${1})
+snippet bet
+	BeEquivalentTo(${1})
 snippet beq
-	BeEquivalentTo(${1})
-snippet beeq
-	BeEquivalentTo(${1})
-snippet beeqto
 	BeEquivalentTo(${1})
 
 # BeFalse()
@@ -75,13 +75,11 @@ snippet false
 	BeFalse()
 snippet bf
 	BeFalse()
-snippet bef
-	BeFalse()
 
-# BeIdenticalTo()
-snippet identical
+# BeIdenticalTo(expected interface{})
+snippet ide
 	BeIdenticalTo(${1})
-snippet bi
+snippet identical
 	BeIdenticalTo(${1})
 snippet bit
 	BeIdenticalTo(${1})
@@ -96,7 +94,9 @@ snippet bn
 snippet bni
 	BeNil()
 
-# BeNumerically()
+# BeNumerically(comparator string, compareTo ...interface{})
+snippet num
+	BeNumerically(${1}, ${2})
 snippet numerical
 	BeNumerically(${1}, ${2})
 snippet bnu
@@ -104,83 +104,111 @@ snippet bnu
 snippet bnum
 	BeNumerically(${1}, ${2})
 
-	BeSent(arg interface{})
+# BeSent(arg interface{})
+snippet sent
+	BeSent(${1})
+snippet bs
+	BeSent(${1})
+snippet bsen
+	BeSent(${1})
 
-	BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
+# BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
+snippet tem
+	BeTemporally(${1}, ${2}, ${3})
+snippet temporally
+	BeTemporally(${1}, ${2}, ${3})
+snippet betemp
+	BeTemporally(${1}, ${2}, ${3})
 
+# BeTrue()
+snippet true
+	BeTrue()
+snippet bt
 	BeTrue()
 
-	BeZero()
+# BeZero()
+snippet zero
+	BeTrue()
+snippet bz
+	BeTrue()
+snippet bez
+	BeTrue()
 
-	ConsistOf(elements ...interface{})
+# ConsistOf(elements ...interface{})
+snippet con
+	ConsistOf(${1})
+snippet con
+	ConsistOf(${1})
+snippet consist
+	ConsistOf(${1})
 
-	ContainElement(element interface{})
+# ContainElement(element interface{})
 
-	ContainSubstring(substr string, args ...interface{})
+# ContainSubstring(substr string, args ...interface{})
 
-	Equal(expected interface{})
+# Equal(expected interface{})
 
-	HaveCap(count int)
+# HaveCap(count int)
 
-	HaveKey(key interface{})
+# HaveKey(key interface{})
 
-	HaveKeyWithValue(key interface{}, value interface{})
+# HaveKeyWithValue(key interface{}, value interface{})
 
-	HaveLen(count int)
+# HaveLen(count int)
 
-	HaveOccurred()
+# HaveOccurred()
 
-	HavePrefix(prefix string, args ...interface{})
+# HavePrefix(prefix string, args ...interface{})
 
-	HaveSuffix(suffix string, args ...interface{})
+# HaveSuffix(suffix string, args ...interface{})
 
-	InterceptGomegaFailures(f func())
+# InterceptGomegaFailures(f func())
 
-	MatchError(expected interface{})
+# MatchError(expected interface{})
 
-	MatchJSON(json interface{})
+# MatchJSON(json interface{})
 
-	MatchRegexp(regexp string, args ...interface{})
+# MatchRegexp(regexp string, args ...interface{})
 
-	MatchYAML(yaml interface{})
+# MatchYAML(yaml interface{})
 
-	Not(matcher types.GomegaMatcher)
+# Not(matcher types.GomegaMatcher)
 
-	Or(ms ...types.GomegaMatcher)
+# Or(ms ...types.GomegaMatcher)
 
-	Panic()
+# Panic()
 
-	Receive(args ...interface{})
+# Receive(args ...interface{})
 
-	RegisterFailHandler(handler types.GomegaFailHandler)
+# RegisterFailHandler(handler types.GomegaFailHandler)
 
-	RegisterTestingT(t types.GomegaTestingT)
+# RegisterTestingT(t types.GomegaTestingT)
 
-	SatisfyAll(matchers ...types.GomegaMatcher)
+# SatisfyAll(matchers ...types.GomegaMatcher)
 
-	SatisfyAny(matchers ...types.GomegaMatcher)
+# SatisfyAny(matchers ...types.GomegaMatcher)
 
-	SetDefaultConsistentlyDuration(t time.Duration)
+# SetDefaultConsistentlyDuration(t time.Duration)
 
-	SetDefaultConsistentlyPollingInterval(t time.Duration)
+# SetDefaultConsistentlyPollingInterval(t time.Duration)
 
-	SetDefaultEventuallyPollingInterval(t time.Duration)
+# SetDefaultEventuallyPollingInterval(t time.Duration)
 
-	SetDefaultEventuallyTimeout(t time.Duration)
+# SetDefaultEventuallyTimeout(t time.Duration)
 
-	Succeed()
+# Succeed()
 
-	WithTransform(transform interface{}, matcher types.GomegaMatcher)
+# WithTransform(transform interface{}, matcher types.GomegaMatcher)
 
-	Expect(actual interface{}, extra ...interface{})
+# Expect(actual interface{}, extra ...interface{})
 
-	ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
+# ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
 
-	Consistently(actual interface{}, intervals ...interface{})
+# Consistently(actual interface{}, intervals ...interface{})
 
-	ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
+# ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
 
-	Eventually(actual interface{}, intervals ...interface{})
+# Eventually(actual interface{}, intervals ...interface{})
 
-	EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
+# EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 
