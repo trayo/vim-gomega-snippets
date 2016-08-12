@@ -1,9 +1,16 @@
+# Layout
+# short form snippet
+# word form snippet
+# miscellaneous acronyms
+
 # And(ms ...types.GomegaMatcher)
 snippet and
 	And(${1}, ${2})
 
 # BeADirectory
 snippet dir
+	BeADirectory()
+snippet directory
 	BeADirectory()
 snippet bad
 	BeADirectory()
@@ -35,13 +42,13 @@ snippet beexist
 # BeAssignableToTypeOf(expected interface{})
 snippet ass
 	BeAssignableToTypeOf()
+snippet assign
+	BeAssignableToTypeOf()
 snippet assignable
 	BeAssignableToTypeOf()
 snippet bat
 	BeAssignableToTypeOf()
 snippet bea
-	BeAssignableToTypeOf()
-snippet beass
 	BeAssignableToTypeOf()
 
 # BeClosed()
@@ -71,9 +78,9 @@ snippet beq
 	BeEquivalentTo(${1})
 
 # BeFalse()
-snippet false
-	BeFalse()
 snippet bf
+	BeFalse()
+snippet false
 	BeFalse()
 
 # BeIdenticalTo(expected interface{})
@@ -87,11 +94,9 @@ snippet bid
 	BeIdenticalTo(${1})
 
 # BeNil()
-snippet nil
-	BeNil()
 snippet bn
 	BeNil()
-snippet bni
+snippet nil
 	BeNil()
 
 # BeNumerically(comparator string, compareTo ...interface{})
@@ -105,11 +110,9 @@ snippet bnum
 	BeNumerically(${1}, ${2})
 
 # BeSent(arg interface{})
-snippet sent
-	BeSent(${1})
 snippet bs
 	BeSent(${1})
-snippet bsen
+snippet sent
 	BeSent(${1})
 
 # BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
@@ -121,32 +124,42 @@ snippet betemp
 	BeTemporally(${1}, ${2}, ${3})
 
 # BeTrue()
-snippet true
-	BeTrue()
 snippet bt
+	BeTrue()
+snippet true
 	BeTrue()
 
 # BeZero()
-snippet zero
-	BeTrue()
 snippet bz
-	BeTrue()
+	BeZero()
+snippet zero
+	BeZero()
 snippet bez
-	BeTrue()
+	BeZero()
 
 # ConsistOf(elements ...interface{})
-snippet con
-	ConsistOf(${1})
-snippet con
+snippet co
 	ConsistOf(${1})
 snippet consist
 	ConsistOf(${1})
 
 # ContainElement(element interface{})
+snippet ce
+	ContainElement(${1})
+snippet element
+	ContainElement(${1})
 
 # ContainSubstring(substr string, args ...interface{})
+snippet cs
+	ContainSubstring(${1}, ${2})
+snippet substring
+	ContainSubstring(${1}, ${2})
 
 # Equal(expected interface{})
+snippet eq
+	Equal(${1})
+snippet equal
+	Equal(${1})
 
 # HaveCap(count int)
 
