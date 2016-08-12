@@ -48,13 +48,15 @@ snippet assignable
 	BeAssignableToTypeOf()
 snippet bat
 	BeAssignableToTypeOf()
-snippet bea
+snippet beassign
 	BeAssignableToTypeOf()
 
 # BeClosed()
 snippet clo
 	BeClosed()
 snippet closed
+	BeClosed()
+snippet bc
 	BeClosed()
 snippet bec
 	BeClosed()
@@ -64,7 +66,7 @@ snippet emp
 	BeEmpty()
 snippet empty
 	BeEmpty()
-snippet bee
+snippet be
 	BeEmpty()
 
 # BeEquivalentTo(expected interface{})
@@ -89,8 +91,6 @@ snippet ide
 snippet identical
 	BeIdenticalTo(${1})
 snippet bit
-	BeIdenticalTo(${1})
-snippet bid
 	BeIdenticalTo(${1})
 
 # BeNil()
@@ -162,66 +162,169 @@ snippet equal
 	Equal(${1})
 
 # HaveCap(count int)
+snippet hc
+	HaveCap(${1})
+snippet cap
+	HaveCap(${1})
 
 # HaveKey(key interface{})
+snippet hk
+	HaveKey(${1})
+snippet key
+	HaveKey(${1})
 
 # HaveKeyWithValue(key interface{}, value interface{})
+snippet hkw
+	HaveKeyWithValue(${1}, ${2})
+snippet keywith
+	HaveKeyWithValue(${1}, ${2})
+snippet withvalue
+	HaveKeyWithValue(${1}, ${2})
 
 # HaveLen(count int)
+snippet hl
+	HaveLen(${1})
+snippet len
+	HaveLen(${1})
 
 # HaveOccurred()
+snippet ho
+	HaveOccurred()
+snippet ho
+	HaveOccurred()
 
 # HavePrefix(prefix string, args ...interface{})
+snippet hp
+	HavePrefix(${1}, ${2})
+snippet prefix
+	HavePrefix(${1}, ${2})
 
 # HaveSuffix(suffix string, args ...interface{})
-
-# InterceptGomegaFailures(f func())
+snippet hs
+	HaveSuffix(${1}, ${2})
+snippet suffix
+	HaveSuffix(${1}, ${2})
 
 # MatchError(expected interface{})
+snippet me
+	MatchError(${1})
+snippet error
+	MatchError(${1})
 
 # MatchJSON(json interface{})
+snippet mj
+	MatchJSON(${1})
+snippet json
+	MatchJSON(${1})
 
 # MatchRegexp(regexp string, args ...interface{})
+snippet mr
+	MatchRegexp(${1}, ${2})
+snippet regexp
+	MatchRegexp(${1}, ${2})
 
 # MatchYAML(yaml interface{})
+snippet my
+	MatchYAML(${1})
+snippet yaml
+	MatchYAML(${1})
 
 # Not(matcher types.GomegaMatcher)
+snippet not
+	Not(${1})
 
 # Or(ms ...types.GomegaMatcher)
+snippet or
+	Or(${1})
 
 # Panic()
+snippet panic
+	Panic(${1})
 
 # Receive(args ...interface{})
-
-# RegisterFailHandler(handler types.GomegaFailHandler)
-
-# RegisterTestingT(t types.GomegaTestingT)
+snippet receive
+	Receive(${1})
 
 # SatisfyAll(matchers ...types.GomegaMatcher)
+snippet all
+	SatisfyAll(${1})
+snippet satisfy
+	SatisfyAll(${1})
 
 # SatisfyAny(matchers ...types.GomegaMatcher)
+snippet any
+	SatisfyAny(${1})
+snippet satisfy
+	SatisfyAll(${1})
 
 # SetDefaultConsistentlyDuration(t time.Duration)
+snippet sdcd
+	SetDefaultConsistentlyDuration(${1})
+snippet setduration
+	SetDefaultConsistentlyDuration(${1})
 
 # SetDefaultConsistentlyPollingInterval(t time.Duration)
+snippet sdcp
+	SetDefaultConsistentlyPollingInterval(${1})
+snippet setpolling
+	SetDefaultConsistentlyPollingInterval(${1})
 
 # SetDefaultEventuallyPollingInterval(t time.Duration)
+snippet sdep
+	SetDefaultEventuallyPollingInterval(${1})
+snippet setpolling
+	SetDefaultEventuallyPollingInterval(${1})
 
 # SetDefaultEventuallyTimeout(t time.Duration)
+snippet sdet
+	SetDefaultEventuallyTimeout(${1})
+snippet settimeout
+	SetDefaultEventuallyTimeout(${1})
 
 # Succeed()
+snippet succeed
+	Succeed()
 
 # WithTransform(transform interface{}, matcher types.GomegaMatcher)
+snippet wt
+	WithTransform(${1})
+snippet transform
+	WithTransform(${1})
 
 # Expect(actual interface{}, extra ...interface{})
+snippet ex
+	Expect(${1}, ${2})
+snippet exp
+	Expect(${1}, ${2})
+snippet expect
+	Expect(${1}, ${2})
 
 # ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
+snippet ewo
+	ExpectWithOffset(${1}, ${2}, ${3})
+snippet offset
+	ExpectWithOffset(${1}, ${2}, ${3})
 
 # Consistently(actual interface{}, intervals ...interface{})
+snippet con
+	Consistently(${1}, ${2})
+snippet consistently
+	Consistently(${1}, ${2})
 
 # ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
+snippet cwo
+	ConsistentlyWithOffset(${1}, ${2}, ${3})
+snippet coffset
+	ConsistentlyWithOffset(${1}, ${2}, ${3})
 
 # Eventually(actual interface{}, intervals ...interface{})
+snippet ev
+	Eventually(${1}, ${2})
+snippet even
+	Eventually(${1}, ${2})
 
 # EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
-
+snippet ewo
+	EventuallyWithOffset(${1}, ${2}, ${3})
+snippet eoffset
+	EventuallyWithOffset(${1}, ${2}, ${3})
