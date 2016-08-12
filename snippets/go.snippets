@@ -291,6 +291,32 @@ snippet wt
 snippet transform
 	WithTransform(${1})
 
+# Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+snippet should
+	.Should(${1}, ${2})
+
+# ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+snippet sn
+	.ShouldNot(${1}, ${2})
+snippet shouldnot
+	.ShouldNot(${1}, ${2})
+
+# To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+snippet to
+	.To(${1}, ${2})
+
+# ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+snippet tn
+	.ToNot(${1}, ${2})
+snippet tonot
+	.ToNot(${1}, ${2})
+
+# NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
+snippet nt
+	.NotTo(${1}, ${2})
+snippet notto
+	.NotTo(${1}, ${2})
+
 # Expect(actual interface{}, extra ...interface{})
 snippet ex
 	Expect(${1}, ${2})
