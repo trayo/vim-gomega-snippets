@@ -1,10 +1,10 @@
 ##### gomega #####
 
 # And(ms ...types.GomegaMatcher)
-snippet and
-	And(${1}, ${2})
+snippet and first description
+	And(${1})
 
-# BeADirectory
+# BeADirectory()
 snippet dir
 	BeADirectory()
 snippet directory
@@ -14,7 +14,7 @@ snippet bad
 snippet bedir
 	BeADirectory()
 
-# BeARegularFile
+# BeARegularFile()
 snippet rf
 	BeARegularFile()
 snippet regular
@@ -24,7 +24,7 @@ snippet brf
 snippet bereg
 	BeARegularFile()
 
-# BeAnExistingFile
+# BeAnExistingFile()
 snippet ef
 	BeAnExistingFile()
 snippet existing
@@ -135,8 +135,6 @@ snippet bez
 	BeZero()
 
 # ConsistOf(elements ...interface{})
-snippet co
-	ConsistOf(${1})
 snippet consist
 	ConsistOf(${1})
 
@@ -148,9 +146,9 @@ snippet element
 
 # ContainSubstring(substr string, args ...interface{})
 snippet cs
-	ContainSubstring(${1}, ${2})
+	ContainSubstring(${1})
 snippet substring
-	ContainSubstring(${1}, ${2})
+	ContainSubstring(${1})
 
 # Equal(expected interface{})
 snippet eq
@@ -192,15 +190,15 @@ snippet ho
 
 # HavePrefix(prefix string, args ...interface{})
 snippet hp
-	HavePrefix(${1}, ${2})
+	HavePrefix(${1})
 snippet prefix
-	HavePrefix(${1}, ${2})
+	HavePrefix(${1})
 
 # HaveSuffix(suffix string, args ...interface{})
 snippet hs
-	HaveSuffix(${1}, ${2})
+	HaveSuffix(${1})
 snippet suffix
-	HaveSuffix(${1}, ${2})
+	HaveSuffix(${1})
 
 # MatchError(expected interface{})
 snippet me
@@ -216,9 +214,9 @@ snippet json
 
 # MatchRegexp(regexp string, args ...interface{})
 snippet mr
-	MatchRegexp(${1}, ${2})
+	MatchRegexp(${1})
 snippet regexp
-	MatchRegexp(${1}, ${2})
+	MatchRegexp(${1})
 
 # MatchYAML(yaml interface{})
 snippet my
@@ -290,66 +288,66 @@ snippet transform
 
 # Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet sh
-	.Should(${1}, ${2})
+	.Should(${1})
 snippet should
-	.Should(${1}, ${2})
+	.Should(${1})
 
 # ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet sn
-	.ShouldNot(${1}, ${2})
+	.ShouldNot(${1})
 snippet shouldnot
-	.ShouldNot(${1}, ${2})
+	.ShouldNot(${1})
 
 # To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet to
-	.To(${1}, ${2})
+	.To(${1})
 
 # ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet tn
-	.ToNot(${1}, ${2})
+	.ToNot(${1})
 snippet tonot
-	.ToNot(${1}, ${2})
+	.ToNot(${1})
 
 # NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet nt
-	.NotTo(${1}, ${2})
+	.NotTo(${1})
 snippet notto
-	.NotTo(${1}, ${2})
+	.NotTo(${1})
 
 # Expect(actual interface{}, extra ...interface{})
 snippet ex
-	Expect(${1}, ${2})
+	Expect(${1})
 snippet exp
-	Expect(${1}, ${2})
+	Expect(${1})
 snippet expect
-	Expect(${1}, ${2})
+	Expect(${1})
 
 # ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
 snippet ewo
-	ExpectWithOffset(${1}, ${2}, ${3})
+	ExpectWithOffset(${1}, ${2})
 snippet offset
-	ExpectWithOffset(${1}, ${2}, ${3})
+	ExpectWithOffset(${1}, ${2})
 
 # Consistently(actual interface{}, intervals ...interface{})
-snippet con
-	Consistently(${1}, ${2})
+snippet consis
+	Consistently(${1})
 snippet consistently
-	Consistently(${1}, ${2})
+	Consistently(${1})
 
 # ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
 snippet cwo
-	ConsistentlyWithOffset(${1}, ${2}, ${3})
+	ConsistentlyWithOffset(${1}, ${2})
 snippet coffset
-	ConsistentlyWithOffset(${1}, ${2}, ${3})
+	ConsistentlyWithOffset(${1}, ${2})
 
 # Eventually(actual interface{}, intervals ...interface{})
 snippet ev
-	Eventually(${1}, ${2})
+	Eventually(${1})
 snippet even
-	Eventually(${1}, ${2})
+	Eventually(${1})
 
 # EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 snippet ewo
-	EventuallyWithOffset(${1}, ${2}, ${3})
+	EventuallyWithOffset(${1}, ${2})
 snippet eoffset
-	EventuallyWithOffset(${1}, ${2}, ${3})
+	EventuallyWithOffset(${1}, ${2})
