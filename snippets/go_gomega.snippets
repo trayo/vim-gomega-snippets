@@ -290,31 +290,33 @@ snippet transform
 
 # Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet sh
-	.Should(${1})
+	.Should(${0})
+snippet sho
+	.Should(${0})
 snippet should
-	.Should(${1})
+	.Should(${0})
 
 # ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet sn
-	.ShouldNot(${1})
+	.ShouldNot(${0})
 snippet shouldnot
-	.ShouldNot(${1})
+	.ShouldNot(${0})
 
 # To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet to
-	.To(${1})
+	.To(${0})
 
 # ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet tn
-	.ToNot(${1})
+	.ToNot(${0})
 snippet tonot
-	.ToNot(${1})
+	.ToNot(${0})
 
 # NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet nt
-	.NotTo(${1})
+	.NotTo(${0})
 snippet notto
-	.NotTo(${1})
+	.NotTo(${0})
 
 # Expect(actual interface{}, extra ...interface{})
 snippet ex
@@ -332,9 +334,9 @@ snippet offset
 
 # Consistently(actual interface{}, intervals ...interface{})
 snippet consis
-	Consistently(${1})
+	Consistently(${0})
 snippet consistently
-	Consistently(${1})
+	Consistently(${0})
 
 # ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
 snippet cwo
@@ -344,6 +346,8 @@ snippet coffset
 
 # Eventually(actual interface{}, intervals ...interface{})
 snippet ev
+	Eventually(${1})
+snippet eve
 	Eventually(${1})
 snippet even
 	Eventually(${1})
