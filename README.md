@@ -2,6 +2,8 @@
 
 Snippets for the [Ginkgo](https://github.com/onsi/ginkgo) matcher library [Gomega](https://github.com/onsi/gomega). These snippets pair well with [vim-ginkgo-snippets](https://github.com/trayo/vim-ginkgo-snippets).
 
+<img src="http://i.imgur.com/J7ydMva.gif" width="750">
+
 ## Installation
 
 ### Vundle
