@@ -1,7 +1,9 @@
 ##### gomega #####
 
 # And(ms ...types.GomegaMatcher)
-snippet and first description
+snippet and And(ms ...types.GomegaMatcher)
+	And(${1})
+snippet And And(ms ...types.GomegaMatcher)
 	And(${1})
 
 # BeADirectory()
@@ -60,8 +62,6 @@ snippet bec
 snippet emp
 	BeEmpty()
 snippet empty
-	BeEmpty()
-snippet be
 	BeEmpty()
 
 # BeEquivalentTo(expected interface{})
@@ -135,6 +135,8 @@ snippet bez
 # ConsistOf(elements ...interface{})
 snippet consist
 	ConsistOf(${1})
+snippet Consist
+	ConsistOf(${1})
 
 # ContainElement(element interface{})
 snippet ce
@@ -151,7 +153,11 @@ snippet substring
 # Equal(expected interface{})
 snippet eq
 	Equal(${1})
+snippet Eq
+	Equal(${1})
 snippet equal
+	Equal(${1})
+snippet Equal
 	Equal(${1})
 
 # HaveCap(count int)
@@ -227,17 +233,25 @@ snippet yaml
 # Not(matcher types.GomegaMatcher)
 snippet not
 	Not(${1})
+snippet Not
+	Not(${1})
 
 # Or(ms ...types.GomegaMatcher)
 snippet or
+	Or(${1})
+snippet Or
 	Or(${1})
 
 # Panic()
 snippet panic
 	Panic(${1})
+snippet Panic
+	Panic(${1})
 
 # Receive(args ...interface{})
 snippet receive
+	Receive(${1})
+snippet Receive
 	Receive(${1})
 
 # SatisfyAll(matchers ...types.GomegaMatcher)
@@ -279,6 +293,8 @@ snippet settimeout
 # Succeed()
 snippet succeed
 	Succeed()
+snippet Succeed
+	Succeed()
 
 # WithTransform(transform interface{}, matcher types.GomegaMatcher)
 snippet wt
@@ -293,6 +309,8 @@ snippet sho
 	.Should(${0})
 snippet should
 	.Should(${0})
+snippet Should
+	.Should(${0})
 
 # ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet sn
@@ -303,17 +321,23 @@ snippet shouldnot
 # To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet to
 	.To(${0})
+snippet To
+	.To(${0})
 
 # ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet tn
 	.ToNot(${0})
 snippet tonot
 	.ToNot(${0})
+snippet ToNot
+	.ToNot(${0})
 
 # NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 snippet nt
 	.NotTo(${0})
 snippet notto
+	.NotTo(${0})
+snippet NotTo
 	.NotTo(${0})
 
 # Expect(actual interface{}, extra ...interface{})
@@ -322,6 +346,8 @@ snippet ex
 snippet exp
 	Expect(${1})
 snippet expect
+	Expect(${1})
+snippet Expect
 	Expect(${1})
 
 # ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
@@ -334,6 +360,8 @@ snippet offset
 snippet consis
 	Consistently(${0})
 snippet consistently
+	Consistently(${0})
+snippet Consistently
 	Consistently(${0})
 
 # ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
@@ -349,9 +377,13 @@ snippet eve
 	Eventually(${1})
 snippet even
 	Eventually(${1})
+snippet Even
+	Eventually(${1})
 
 # EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 snippet ewo
+	EventuallyWithOffset(${1}, ${2})
+snippet eoff
 	EventuallyWithOffset(${1}, ${2})
 snippet eoffset
 	EventuallyWithOffset(${1}, ${2})
