@@ -7,383 +7,383 @@ snippet And And(ms ...types.GomegaMatcher)
 	And(${1})
 
 # BeADirectory()
-snippet dir
+snippet dir BeADirectory()
 	BeADirectory()
-snippet directory
+snippet directory BeADirectory()
 	BeADirectory()
-snippet bad
+snippet bad BeADirectory()
 	BeADirectory()
-snippet bedir
+snippet bedir BeADirectory()
 	BeADirectory()
 
 # BeARegularFile()
-snippet rf
+snippet rf BeARegularFile()
 	BeARegularFile()
-snippet regular
+snippet regular BeARegularFile()
 	BeARegularFile()
-snippet brf
+snippet brf BeARegularFile()
 	BeARegularFile()
-snippet bereg
+snippet bereg BeARegularFile()
 	BeARegularFile()
 
 # BeAnExistingFile()
-snippet ef
+snippet ef BeAnExistingFile()
 	BeAnExistingFile()
-snippet existing
+snippet existing BeAnExistingFile()
 	BeAnExistingFile()
-snippet bae
+snippet bae BeAnExistingFile()
 	BeAnExistingFile()
-snippet beexist
+snippet beexist BeAnExistingFile()
 	BeAnExistingFile()
 
 # BeAssignableToTypeOf(expected interface{})
-snippet ass
+snippet ass BeAssignableToTypeOf(expected interface{})
 	BeAssignableToTypeOf()
-snippet assign
+snippet assign BeAssignableToTypeOf(expected interface{})
 	BeAssignableToTypeOf()
-snippet assignable
+snippet assignable BeAssignableToTypeOf(expected interface{})
 	BeAssignableToTypeOf()
-snippet bat
+snippet bat BeAssignableToTypeOf(expected interface{})
 	BeAssignableToTypeOf()
-snippet beassign
+snippet beassign BeAssignableToTypeOf(expected interface{})
 	BeAssignableToTypeOf()
 
 # BeClosed()
-snippet clo
+snippet clo BeClosed()
 	BeClosed()
-snippet closed
+snippet closed BeClosed()
 	BeClosed()
-snippet bc
+snippet bc BeClosed()
 	BeClosed()
-snippet bec
+snippet bec BeClosed()
 	BeClosed()
 
 # BeEmpty()
-snippet emp
+snippet emp BeEmpty()
 	BeEmpty()
-snippet empty
+snippet empty BeEmpty()
 	BeEmpty()
 
 # BeEquivalentTo(expected interface{})
-snippet equiv
+snippet equiv BeEquivalentTo(expected interface{})
 	BeEquivalentTo(${1})
-snippet equivalent
+snippet equivalent BeEquivalentTo(expected interface{})
 	BeEquivalentTo(${1})
-snippet bet
+snippet bet BeEquivalentTo(expected interface{})
 	BeEquivalentTo(${1})
-snippet beq
+snippet beq BeEquivalentTo(expected interface{})
 	BeEquivalentTo(${1})
 
 # BeFalse()
-snippet bf
+snippet bf BeFalse()
 	BeFalse()
-snippet false
+snippet false BeFalse()
 	BeFalse()
 
 # BeIdenticalTo(expected interface{})
-snippet ide
+snippet ide BeIdenticalTo(expected interface{})
 	BeIdenticalTo(${1})
-snippet identical
+snippet identical BeIdenticalTo(expected interface{})
 	BeIdenticalTo(${1})
-snippet bit
+snippet bit BeIdenticalTo(expected interface{})
 	BeIdenticalTo(${1})
 
 # BeNil()
-snippet bn
+snippet bn BeNil()
 	BeNil()
-snippet nil
+snippet nil BeNil()
 	BeNil()
 
 # BeNumerically(comparator string, compareTo ...interface{})
-snippet num
+snippet num BeNumerically(comparator string, compareTo ...interface{})
 	BeNumerically(${1}, ${2})
-snippet numerical
+snippet numerical BeNumerically(comparator string, compareTo ...interface{})
 	BeNumerically(${1}, ${2})
-snippet bnu
+snippet bnu BeNumerically(comparator string, compareTo ...interface{})
 	BeNumerically(${1}, ${2})
-snippet bnum
+snippet bnum BeNumerically(comparator string, compareTo ...interface{})
 	BeNumerically(${1}, ${2})
 
 # BeSent(arg interface{})
-snippet bs
+snippet bs BeSent(arg interface{})
 	BeSent(${1})
-snippet sent
+snippet sent BeSent(arg interface{})
 	BeSent(${1})
 
 # BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
-snippet tem
+snippet tem BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
 	BeTemporally(${1}, ${2}, ${3})
-snippet temporally
+snippet temporally BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
 	BeTemporally(${1}, ${2}, ${3})
-snippet betemp
+snippet betemp BeTemporally(comparator string, compareTo time.Time, threshold ...time.Duration)
 	BeTemporally(${1}, ${2}, ${3})
 
 # BeTrue()
-snippet bt
+snippet bt BeTrue()
 	BeTrue()
-snippet true
+snippet true BeTrue()
 	BeTrue()
 
 # BeZero()
-snippet bz
+snippet bz BeZero()
 	BeZero()
-snippet zero
+snippet zero BeZero()
 	BeZero()
-snippet bez
+snippet bez BeZero()
 	BeZero()
 
 # ConsistOf(elements ...interface{})
-snippet consist
+snippet consist ConsistOf(elements ...interface{})
 	ConsistOf(${1})
-snippet Consist
+snippet Consist ConsistOf(elements ...interface{})
 	ConsistOf(${1})
 
 # ContainElement(element interface{})
-snippet ce
+snippet ce ContainElement(element interface{})
 	ContainElement(${1})
-snippet element
+snippet element ContainElement(element interface{})
 	ContainElement(${1})
 
 # ContainSubstring(substr string, args ...interface{})
-snippet cs
+snippet cs ContainSubstring(substr string, args ...interface{})
 	ContainSubstring(${1})
-snippet substring
+snippet substring ContainSubstring(substr string, args ...interface{})
 	ContainSubstring(${1})
 
 # Equal(expected interface{})
-snippet eq
+snippet eq Equal(expected interface{})
 	Equal(${1})
-snippet Eq
+snippet Eq Equal(expected interface{})
 	Equal(${1})
-snippet equal
+snippet equal Equal(expected interface{})
 	Equal(${1})
-snippet Equal
+snippet Equal Equal(expected interface{})
 	Equal(${1})
 
 # HaveCap(count int)
-snippet hc
+snippet hc HaveCap(count int)
 	HaveCap(${1})
-snippet cap
+snippet cap HaveCap(count int)
 	HaveCap(${1})
 
 # HaveKey(key interface{})
-snippet hk
+snippet hk HaveKey(key interface{})
 	HaveKey(${1})
-snippet key
+snippet key HaveKey(key interface{})
 	HaveKey(${1})
 
 # HaveKeyWithValue(key interface{}, value interface{})
-snippet hkw
+snippet hkw HaveKeyWithValue(key interface{}, value interface{})
 	HaveKeyWithValue(${1}, ${2})
-snippet keywith
+snippet keywith HaveKeyWithValue(key interface{}, value interface{})
 	HaveKeyWithValue(${1}, ${2})
-snippet withvalue
+snippet withvalue HaveKeyWithValue(key interface{}, value interface{})
 	HaveKeyWithValue(${1}, ${2})
 
 # HaveLen(count int)
-snippet hl
+snippet hl HaveLen(count int)
 	HaveLen(${1})
-snippet len
+snippet len HaveLen(count int)
 	HaveLen(${1})
 
 # HaveOccurred()
-snippet ho
+snippet ho HaveOccurred()
 	HaveOccurred()
-snippet hav
+snippet hav HaveOccurred()
 	HaveOccurred()
-snippet have
+snippet have HaveOccurred()
 	HaveOccurred()
 
 # HavePrefix(prefix string, args ...interface{})
-snippet hp
+snippet hp HavePrefix(prefix string, args ...interface{})
 	HavePrefix(${1})
-snippet prefix
+snippet prefix HavePrefix(prefix string, args ...interface{})
 	HavePrefix(${1})
 
 # HaveSuffix(suffix string, args ...interface{})
-snippet hs
+snippet hs HaveSuffix(suffix string, args ...interface{})
 	HaveSuffix(${1})
-snippet suffix
+snippet suffix HaveSuffix(suffix string, args ...interface{})
 	HaveSuffix(${1})
 
 # MatchError(expected interface{})
-snippet me
+snippet me MatchError(expected interface{})
 	MatchError(${1})
-snippet error
+snippet error MatchError(expected interface{})
 	MatchError(${1})
 
 # MatchJSON(json interface{})
-snippet mj
+snippet mj MatchJSON(json interface{})
 	MatchJSON(${1})
-snippet json
+snippet json MatchJSON(json interface{})
 	MatchJSON(${1})
 
 # MatchRegexp(regexp string, args ...interface{})
-snippet mr
+snippet mr MatchRegexp(regexp string, args ...interface{})
 	MatchRegexp(${1})
-snippet regexp
+snippet regexp MatchRegexp(regexp string, args ...interface{})
 	MatchRegexp(${1})
 
 # MatchYAML(yaml interface{})
-snippet my
+snippet my MatchYAML(yaml interface{})
 	MatchYAML(${1})
-snippet yaml
+snippet yaml MatchYAML(yaml interface{})
 	MatchYAML(${1})
 
 # Not(matcher types.GomegaMatcher)
-snippet not
+snippet not Not(matcher types.GomegaMatcher)
 	Not(${1})
-snippet Not
+snippet Not Not(matcher types.GomegaMatcher)
 	Not(${1})
 
 # Or(ms ...types.GomegaMatcher)
-snippet or
+snippet or Or(ms ...types.GomegaMatcher)
 	Or(${1})
-snippet Or
+snippet Or Or(ms ...types.GomegaMatcher)
 	Or(${1})
 
 # Panic()
-snippet panic
+snippet panic Panic()
 	Panic(${1})
-snippet Panic
+snippet Panic Panic()
 	Panic(${1})
 
 # Receive(args ...interface{})
-snippet receive
+snippet receive Receive(args ...interface{})
 	Receive(${1})
-snippet Receive
+snippet Receive Receive(args ...interface{})
 	Receive(${1})
 
 # SatisfyAll(matchers ...types.GomegaMatcher)
-snippet all
+snippet all SatisfyAll(matchers ...types.GomegaMatcher)
 	SatisfyAll(${1})
-snippet satisfy
+snippet satisfy SatisfyAll(matchers ...types.GomegaMatcher)
 	SatisfyAll(${1})
 
 # SatisfyAny(matchers ...types.GomegaMatcher)
-snippet any
+snippet any SatisfyAny(matchers ...types.GomegaMatcher)
 	SatisfyAny(${1})
-snippet satisfy
+snippet satisfy SatisfyAny(matchers ...types.GomegaMatcher)
 	SatisfyAll(${1})
 
 # SetDefaultConsistentlyDuration(t time.Duration)
-snippet sdcd
+snippet sdcd SetDefaultConsistentlyDuration(t time.Duration)
 	SetDefaultConsistentlyDuration(${1})
-snippet setduration
+snippet setduration SetDefaultConsistentlyDuration(t time.Duration)
 	SetDefaultConsistentlyDuration(${1})
 
 # SetDefaultConsistentlyPollingInterval(t time.Duration)
-snippet sdcp
+snippet sdcp SetDefaultConsistentlyPollingInterval(t time.Duration)
 	SetDefaultConsistentlyPollingInterval(${1})
-snippet setpolling
+snippet setpolling SetDefaultConsistentlyPollingInterval(t time.Duration)
 	SetDefaultConsistentlyPollingInterval(${1})
 
 # SetDefaultEventuallyPollingInterval(t time.Duration)
-snippet sdep
+snippet sdep SetDefaultEventuallyPollingInterval(t time.Duration)
 	SetDefaultEventuallyPollingInterval(${1})
-snippet setpolling
+snippet setpolling SetDefaultEventuallyPollingInterval(t time.Duration)
 	SetDefaultEventuallyPollingInterval(${1})
 
 # SetDefaultEventuallyTimeout(t time.Duration)
-snippet sdet
+snippet sdet SetDefaultEventuallyTimeout(t time.Duration)
 	SetDefaultEventuallyTimeout(${1})
-snippet settimeout
+snippet settimeout SetDefaultEventuallyTimeout(t time.Duration)
 	SetDefaultEventuallyTimeout(${1})
 
 # Succeed()
-snippet succeed
+snippet succeed Succeed()
 	Succeed()
-snippet Succeed
+snippet Succeed Succeed()
 	Succeed()
 
 # WithTransform(transform interface{}, matcher types.GomegaMatcher)
-snippet wt
+snippet wt WithTransform(transform interface{}, matcher types.GomegaMatcher)
 	WithTransform(${1})
-snippet transform
+snippet transform WithTransform(transform interface{}, matcher types.GomegaMatcher)
 	WithTransform(${1})
 
 # Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
-snippet sh
+snippet sh Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.Should(${0})
-snippet sho
+snippet sho Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.Should(${0})
-snippet should
+snippet should Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.Should(${0})
-snippet Should
+snippet Should Should(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.Should(${0})
 
 # ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
-snippet sn
+snippet sn ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.ShouldNot(${0})
-snippet shouldnot
+snippet shouldnot ShouldNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.ShouldNot(${0})
 
 # To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
-snippet to
+snippet to To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.To(${0})
-snippet To
+snippet To To(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.To(${0})
 
 # ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
-snippet tn
+snippet tn ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.ToNot(${0})
-snippet tonot
+snippet tonot ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.ToNot(${0})
-snippet ToNot
+snippet ToNot ToNot(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.ToNot(${0})
 
 # NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
-snippet nt
+snippet nt NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.NotTo(${0})
-snippet notto
+snippet notto NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.NotTo(${0})
-snippet NotTo
+snippet NotTo NotTo(matcher types.GomegaMatcher, optionalDescription ...interface{}) bool
 	.NotTo(${0})
 
 # Expect(actual interface{}, extra ...interface{})
-snippet ex
+snippet ex Expect(actual interface{}, extra ...interface{})
 	Expect(${1})
-snippet exp
+snippet exp Expect(actual interface{}, extra ...interface{})
 	Expect(${1})
-snippet expect
+snippet expect Expect(actual interface{}, extra ...interface{})
 	Expect(${1})
-snippet Expect
+snippet Expect Expect(actual interface{}, extra ...interface{})
 	Expect(${1})
 
 # ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
-snippet ewo
+snippet ewo ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
 	ExpectWithOffset(${1}, ${2})
-snippet offset
+snippet offset ExpectWithOffset(offset int, actual interface{}, extra ...interface{})
 	ExpectWithOffset(${1}, ${2})
 
 # Consistently(actual interface{}, intervals ...interface{})
-snippet consis
+snippet consis Consistently(actual interface{}, intervals ...interface{})
 	Consistently(${0})
-snippet consistently
+snippet consistently Consistently(actual interface{}, intervals ...interface{})
 	Consistently(${0})
-snippet Consistently
+snippet Consistently Consistently(actual interface{}, intervals ...interface{})
 	Consistently(${0})
 
 # ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
-snippet cwo
+snippet cwo ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
 	ConsistentlyWithOffset(${1}, ${2})
-snippet coffset
+snippet coffset ConsistentlyWithOffset(offset int, actual interface{}, intervals ...interface{})
 	ConsistentlyWithOffset(${1}, ${2})
 
 # Eventually(actual interface{}, intervals ...interface{})
-snippet ev
+snippet ev Eventually(actual interface{}, intervals ...interface{})
 	Eventually(${1})
-snippet eve
+snippet eve Eventually(actual interface{}, intervals ...interface{})
 	Eventually(${1})
-snippet even
+snippet even Eventually(actual interface{}, intervals ...interface{})
 	Eventually(${1})
-snippet Even
+snippet Even Eventually(actual interface{}, intervals ...interface{})
 	Eventually(${1})
 
 # EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
-snippet ewo
+snippet ewo EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 	EventuallyWithOffset(${1}, ${2})
-snippet eoff
+snippet eoff EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 	EventuallyWithOffset(${1}, ${2})
-snippet eoffset
+snippet eoffset EventuallyWithOffset(offset int, actual interface{}, intervals ...interface{})
 	EventuallyWithOffset(${1}, ${2})
